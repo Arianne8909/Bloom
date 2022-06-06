@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!--₦-->
+<html>
+<head>
+    <title>Bloom|Login/Sign-up</title>
+    
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10f7acea20.js" crossorigin="anonymous"></script>
+</head>
+
+<body  style="background-image: linear-gradient(to top, black,rgb(255, 255, 255)); background-size: cover;">
+        <nav>
+            <a href="Bloom.html"><img src="img/bloom.png" alt="logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="Bloom.html">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="cv_ass.html">About</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="login.html">Login/Sign-up</a></li>
+                    <a href=""><img src="img/shopping_cart2.png" alt="Cart" id="cart"></a>
+                <ul>
+            </div>
+        </nav>
+
+    <div id='login-form'class='login-page'>
+        <div class="form-box">
+            <div class='button-box'>
+                <div id='btn'></div>
+                <button type='button'onclick='login()'class='toggle-btn' style="color: white">Log In</button>
+                <button type='button'onclick='register()'class='toggle-btn' style="color: white">Register</button>
+            </div>
+            <form id='login' class='input-group-login'>
+                <input type='text'class='input-field'placeholder='Email Id' required >
+        <input type='password'class='input-field'placeholder='Enter Password' required>
+        <input type='checkbox'class='check-box'><span>Remember Password</span>
+        <button type='submit'class='submit-btn'>Log in</button>
+     </form>
+     <form id='register' class='input-group-register'>
+         <input type='text'class='input-field'placeholder='First Name' required>
+         <input type='text'class='input-field'placeholder='Last Name ' required>
+         <input type='email'class='input-field'placeholder='Email Id' required>
+         <input type='password'class='input-field'placeholder='Enter Password' required>
+         <input type='password'class='input-field'placeholder='Confirm Password'  required>
+         <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                <button type='submit'class='submit-btn'>Register</button>
+         </form>
+        </div>
+    </div>
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+</body>
+</html>
